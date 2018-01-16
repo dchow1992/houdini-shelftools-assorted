@@ -1,7 +1,5 @@
 def mergeSel():
-    x = hou.selectedNodes()
-    
-    
+    x = hou.selectedNodes()    
     
     network_editor = hou.ui.paneTabOfType(hou.paneTabType.NetworkEditor)   
 
