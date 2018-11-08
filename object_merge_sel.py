@@ -1,8 +1,10 @@
+network_editor = kwargs['pane']
 def OMSel():
-    network_editor = hou.ui.paneTabOfType(hou.paneTabType.NetworkEditor)
+    
     parm_view = hou.ui.paneTabOfType(hou.paneTabType.Parm)
     
     pos = network_editor.selectPosition()
+    
     if(len(hou.selectedNodes()) > 0):
         x = hou.selectedNodes()[0]        
         
