@@ -1,8 +1,7 @@
+network_editor = kwargs['pane']
 def mergeSel():
     x = hou.selectedNodes()    
     
-    network_editor = hou.ui.paneTabOfType(hou.paneTabType.NetworkEditor)   
-
     pos = network_editor.selectPosition()
 
     a = network_editor.pwd().createNode("merge")
